@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="ja"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;自己分析シート&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body { font-family: sans-serif; line-height: 1.6; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h2, h3 { margin-top: 1.5em; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.question { margin-bottom: 2em; border: 1px solid #ccc; padding: 1em; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>label { display: block; margin-bottom: 0.5em; font-weight: bold; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>input[type="text"], textarea, select { width: 100%; padding: 0.5em; margin-bottom: 1em; box-sizing: border-box; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>textarea { height: 80px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ul { list-style-type: none; padding-left: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>li { margin-bottom: 0.5em; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>#characteristics-list, #emotions-list { border: 1px solid #eee; padding: 0.5em; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;自己分析シート&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;① 学生氏名&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="studentName" placeholder="氏名を入力してください"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;② 日付&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="answerDate" placeholder="回答日を入力してください (例: 2025年5月15日)"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;③ 人生が左右されたと思うこと 1&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="period1"&gt;時期&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;select id="period1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value=""&gt;選択してください&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="幼少期"&gt;幼少期&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="小学校"&gt;小学校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="中学校"&gt;中学校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="高校"&gt;高校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="大学"&gt;大学&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="その他"&gt;その他&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="reason1"&gt;なぜ、左右されたと考えるか？&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;textarea id="reason1" placeholder="理由を具体的に記述してください" onkeyup="analyzeInputs()"&gt;&lt;/textarea&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="impact1"&gt;それは今のどんなところに影響しているのか？&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;textarea id="impact1" placeholder="現在の状況や考え方にどのような影響を与えているかを記述してください"&gt;&lt;/textarea&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;④ 人生が左右されたと思うこと 2&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="period2"&gt;時期&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;select id="period2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value=""&gt;選択してください&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="幼少期"&gt;幼少期&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="小学校"&gt;小学校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="中学校"&gt;中学校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="高校"&gt;高校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="大学"&gt;大学&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="その他"&gt;その他&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="reason2"&gt;なぜ、左右されたと考えるか？&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;textarea id="reason2" placeholder="理由を具体的に記述してください" onkeyup="analyzeInputs()"&gt;&lt;/textarea&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="impact2"&gt;それは今のどんなところに影響しているのか？&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;textarea id="impact2" placeholder="現在の状況や考え方にどのような影響を与えているかを記述してください"&gt;&lt;/textarea&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;⑤ 人生が左右されたと思うこと 3&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="period3"&gt;時期&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;select id="period3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value=""&gt;選択してください&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="幼少期"&gt;幼少期&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="小学校"&gt;小学校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="中学校"&gt;中学校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="高校"&gt;高校&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="大学"&gt;大学&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;option value="その他"&gt;その他&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="reason3"&gt;なぜ、左右されたと考えるか？&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;textarea id="reason3" placeholder="理由を具体的に記述してください" onkeyup="analyzeInputs()"&gt;&lt;/textarea&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="impact3"&gt;それは今のどんなところに影響しているのか？&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;textarea id="impact3" placeholder="現在の状況や考え方にどのような影響を与えているかを記述してください"&gt;&lt;/textarea&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;⑥ ③〜⑤で答えたなぜ左右したかの理由を端的な言葉としてその学生の特性としてラベル化するリスト&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="characteristics-list"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;⑦ ⑥の特性に対して一般的な感情もラベルづけする&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="emotions-list"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;⑧ ⑦でラベルづけした感情をモチベーショングラフのように表す&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="motivation-graph"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;※ ここは簡易的な表現となります。&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function analyzeInputs() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const reason1 = document.getElementById("reason1").value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const reason2 = document.getElementById("reason2").value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const reason3 = document.getElementById("reason3").value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const allReasons = reason1 + " " + reason2 + " " + reason3;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const characteristics = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const emotions = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const motivationSummary = [];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 簡単なキーワードマッチングによる特性と感情の抽出</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const keywords = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"挑戦": { characteristic: "挑戦心", emotion: "意欲" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"目標達成": { characteristic: "目標達成意欲", emotion: "達成感" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"協力": { characteristic: "協調性", emotion: "連帯感" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"学び": { characteristic: "探求心", emotion: "好奇心" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"成長": { characteristic: "成長意欲", emotion: "向上心" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"困難": { characteristic: "忍耐力", emotion: "不屈の精神" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"工夫": { characteristic: "創造性", emotion: "発見" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"貢献": { characteristic: "貢献意欲", emotion: "喜び" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"責任": { characteristic: "責任感", emotion: "使命感" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>"リーダーシップ": { characteristic: "リーダーシップ", emotion: "鼓舞" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 必要に応じてキーワードを追加・修正してください</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>for (const word in keywords) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (allReasons.includes(word)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (!characteristics.includes(keywords[word].characteristic)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>characteristics.push(keywords[word].characteristic);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (!emotions.includes(keywords[word].emotion)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>emotions.push(keywords[word].emotion);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById("characteristics-list").innerText = characteristics.join("、");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById("emotions-list").innerText = emotions.join("、");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 簡易的なモチベーションの傾向生成</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (emotions.length &gt; 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>motivationSummary.push("これらの経験から、");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>motivationSummary.push(emotions.join("、") + "といった感情がモチベーションの源泉となっていると考えられます。");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (characteristics.includes("挑戦心") || characteristics.includes("目標達成意欲")) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>motivationSummary.push("目標達成に向けて積極的に行動する傾向が見られます。");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (characteristics.includes("協調性") || characteristics.includes("貢献意欲")) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>motivationSummary.push("チームや周囲との連携を重視し、貢献することに喜びを感じるかもしれません。");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// より詳細な分析に基づいて条件分岐を追加することも可能です</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById("motivation-graph").innerText = motivationSummary.join("");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById("motivation-graph").innerText = "記述内容からモチベーションの傾向を分析中です。";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
